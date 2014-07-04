@@ -1,0 +1,86 @@
+<html>
+	<head> <title> stuff </title>
+		<script src="lib/jquery-2.1.1.min.js"></script>
+		<style>
+		
+		body {
+			/*background-color: #24251a;*/
+			background-color: c9cdc5;
+			color: black;
+			font: 11pt helvetica;
+		}
+
+		.cellborder {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			
+			border-style: solid;
+			border-width: 4px 17px 17px 7px;
+			-moz-border-image: url('./images/table2.png') 4 17 17 7;
+			-webkit-border-image: url('./images/table2.png') 4 17 17 7;
+			-o-border-image: url('./images/table2.png') 4 17 17 7;
+			border-image: url('./images/table2.png') 4 17 17 7;
+			
+			padding: 2px;
+			padding-right:0px;
+		}
+		
+		.hypothesis {
+			position: relative;
+			margin-left: auto;
+			margin-right: auto;
+			width: 80%;
+/*			border: 1px red solid;*/
+		}
+
+		.hypothesis-title-word {
+			font: bold 28pt helvetica;
+			color: #666666;
+		}
+		
+		.hypothesis-title {
+			font: bold 28pt helvetica;
+			color: #000000;
+		}
+		
+		#title-section {
+			position: relative;
+		}
+		
+		#author-text {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			font: bold italic 18pt helvetica;
+		}
+		
+		.sep1 {
+			position: relative;
+			width: 100%;
+			height: 8px;
+			background-color: #000000;
+		}
+		
+		.sep2 {
+			position: relative;
+			width: 100%;
+			height: 4px;
+			background-color: #000000;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="hypothesis">
+		<div class="cellborder">
+			<div id="title-section">
+				<span class="hypothesis-title-word">Hypothesis: <span class="hypothesis-title">The moon is made of cheese. Here's some CHEESE for ya bra!</span></span>
+				<span id="author-text">by Sofia Chandler-Freed</span>
+			</div>
+			<div class="sep2"></div>
+			Here is some more text. And it's not just any text, but THE very best text possible--especially since it's about how the moon's made out of some kinda weird ass soy-based Wallace and Grommit cheese.
+		</div>
+		</div>
+	</body>
+</html>
