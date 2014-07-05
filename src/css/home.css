@@ -1,0 +1,40 @@
+body {
+	background-color: whitesmoke;
+		color: black;
+		font: 44pt 'Open Sans';
+	}
+
+	#banner {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+				
+		border-style: solid;
+		border-color: E0E0E0;
+		background-color: c9cda7
+		
+		padding: 2px;
+		padding-right:0px;
+		
+		}
+
+	#menu {
+		border-color: white;
+		border-style: solid;
+		color: black;
+		font: 14pt 'Open Sans';
+	}	
+
+	.menuitem {
+		font: 14pt 'Open Sans';
+		position: relative;
+		left: 10px;
+	}
+
+	#notificationbox {
+		width: 200px;
+		margin-left: 0;
+
+		border-style: solid;
+		border-color: black;
+	}
