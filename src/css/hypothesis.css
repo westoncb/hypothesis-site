@@ -6,7 +6,7 @@ body {
 		}
 
 		.cellborder {
-			position: relative;
+			position: absolute;
 			margin-left: auto;
 			margin-right: auto;
 			
@@ -16,11 +16,10 @@ body {
 			-webkit-border-image: url('../images/table2.png') 4 17 17 7 fill;
 			-o-border-image: url('../images/table2.png') 4 17 17 7 fill;
 			border-image: url('../images/table2.png') 4 17 17 7 fill;
-			background-color: c9cda7
+			/*background-color: c9cda7;*/
 			
 			padding: 2px;
 			padding-right:0px;
-			
 		}
 		
 		.hypothesis {
