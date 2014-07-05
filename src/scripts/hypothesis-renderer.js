@@ -30,7 +30,7 @@ $(document).ready(function(){
 			padding: 2px; \
 			padding-right:0px;';
 
-	// document.writeln("<style>.cellborder {" + cellCSSString + "}</style>");
+	document.writeln("<style>.cellborder {" + cellCSSString + "}</style>");
 
 	var cellString = '<div class="cellborder"></div>';
 
