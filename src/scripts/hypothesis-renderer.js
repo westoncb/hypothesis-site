@@ -15,37 +15,31 @@ $(document).ready(function(){
 					 }';
 
 	var hypothesisModel = jQuery.parseJSON(hypothesisModelString);
-	const tab = "&nbsp;&nbsp&nbsp;&nbsp";
 
-	var cellCSSString = 'position: relative; \
-			margin-left: auto; \
-			margin-right: auto; \
-			border-style: solid; \
-			border-width: 4px 17px 17px 7px; \
-			-moz-border-image: url(\'./images/table2.png\') 4 17 17 7 fill; \
-			-webkit-border-image: url(\'./images/table2.png\') 4 17 17 7 fill; \
-			-o-border-image: url(\'./images/table2.png\') 4 17 17 7 fill; \
-			border-image: url(\'./images/table2.png\') 4 17 17 7 fill; \
-			background-color: c9cda7; \
-			padding: 2px; \
-			padding-right:0px;';
-
-	document.writeln("<style>.cellborder {" + cellCSSString + "}</style>");
+	document.writeln('<link rel="stylesheet" type="text/css" href="css/hypothesis.css">');
 
 	var cellString = '<div class="cellborder"></div>';
 
 	function walkJSON(json, depth, parent) {
-		var thisCell = $(cellString);
-		parent.append(thisCell);
-
 		for (var key in json) {
-    		
+    		var thisCell = $(cellString);
+			thisCell.css("left", depth*20);
+			parent.append(thisCell);
+
     		thisCell.append(key + ": ");
 
 	    	var value = json[key]
 	    	if (typeof(value) == "object") {
-	    		thisCell.append("<br>");
-	    		walkJSON(value, depth+1, thisCell);
+	    		if (value instanceof Array) {
+	    			console.log(value);
+	    			for (var element in value) {
+	    				thisCell.append("<br>");
+	    				walkJSON(value[element], depth+1, parent);	
+	    			}
+	    		} else {
+	    			thisCell.append("<br>");
+	    			walkJSON(value, depth+1, parent);
+	    		}
 	    	} else {
 	    		thisCell.append(value);
 	    	}
