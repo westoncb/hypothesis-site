@@ -98,15 +98,15 @@ $(document).ready(function(){
 						return true;
 
 					var isit = this.childSet[0].container.is(":visible");
-					console.log(isit);
 					return isit;
 				},
 
 				recursiveHideChildren: function(func) {
 					for (var i = 0; i < this.childSet.length; i++) {
 						var child = this.childSet[i];
-						child.container.slideUp({progress: func,
-												 duration: 100});
+						// child.container.slideUp({progress: func,
+						// 						 duration: 300});
+						child.container.hide();
 						child.recursiveHideChildren();
 					};
 				},
@@ -122,8 +122,9 @@ $(document).ready(function(){
 				showChildren: function(func) {
 					for (var i = 0; i < this.childSet.length; i++) {
 						var child = this.childSet[i];
-						child.container.slideDown({progress: func,
-												 duration: 100});
+						// child.container.slideDown({progress: func,
+						// 						 duration: 300});
+						child.container.show();
 					};	
 				},
 
@@ -270,7 +271,7 @@ $(document).ready(function(){
 	// 	}
 	// }
 
-	var hypothesisNode = $('<div class="cellborder" id="hyproot" style="position: relative; width: 80%; margin-left: auto; margin-right: auto;"></div>');
+	var hypothesisNode = $('<div class="cellborderroot" id="hyproot" style="position: relative; width: 80%; margin-left: auto; margin-right: auto;"></div>');
 	$('body').append(hypothesisNode);
 	hypothesisNode.append(buildHeader(hypothesisModel.name, hypothesisModel.author));
 
@@ -287,6 +288,8 @@ $(document).ready(function(){
 				node.recursiveHideChildren(layoutCells);
 			else
 				node.showChildren(layoutCells);
+
+			layoutCells();
 		});
 	}
 

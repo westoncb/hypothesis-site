@@ -10,7 +10,29 @@ body {
 			background-color: #303030;
 		}
 
+		.cellborder:hover {
+			-moz-border-image: url('../images/tablehover.png') 4 17 17 7 fill;
+			-webkit-border-image: url('../images/tablehover.png') 4 17 17 7 fill;
+			-o-border-image: url('../images/tablehover.png') 4 17 17 7 fill;
+			border-image: url('../images/tablehover.png') 4 17 17 7 fill;
+		}
+
 		.cellborder {
+			position: relative;
+			font: 14px "Open Sans";
+			word-wrap: break-word;
+
+			border-style: solid;
+			border-width: 4px 17px 17px 7px;
+			-moz-border-image: url('../images/table2.png') 4 17 17 7 fill;
+			-webkit-border-image: url('../images/table2.png') 4 17 17 7 fill;
+			-o-border-image: url('../images/table2.png') 4 17 17 7 fill;
+			border-image: url('../images/table2.png') 4 17 17 7 fill;
+
+			padding: 1px;
+		}
+
+		.cellborderroot {
 			position: relative;
 			font: 14px "Open Sans";
 			word-wrap: break-word;
