@@ -35,14 +35,14 @@ body {
 
 		.treeVertical {
 			position: absolute;
-			background-color: red;
-			width: 4px;
+			background-color: 10bce7;
+			width: 8px;
 		}
 
 		.treeHorizontal {
 			position: absolute;
-			background-color: red;
-			height: 4px;
+			background-color: 10bce7;
+			height: 8px;
 		}
 		
 		.hypothesis {
@@ -76,7 +76,7 @@ body {
 		.sep1 {
 			position: relative;
 			width: 100%;
-			height: 8px;
+			height: 4px;
 			background-color: #000000;
 			margin-bottom: -10px;
 		}
