@@ -2,24 +2,47 @@ body {
 			/*background-color: #24251a;*/
 			background-color: whitesmoke;
 			color: black;
-			font: 11pt 'Open Sans';
+		}
+
+		.cellleftmargin {
+			position: absolute;
+			margin-top: 5px;
+			background-color: #303030;
 		}
 
 		.cellborder {
-			position: absolute;
-			margin-left: auto;
-			margin-right: auto;
-			
+			position: relative;
+			font: 14px "Open Sans";
+			word-wrap: break-word;
+
 			border-style: solid;
 			border-width: 4px 17px 17px 7px;
 			-moz-border-image: url('../images/table2.png') 4 17 17 7 fill;
 			-webkit-border-image: url('../images/table2.png') 4 17 17 7 fill;
 			-o-border-image: url('../images/table2.png') 4 17 17 7 fill;
 			border-image: url('../images/table2.png') 4 17 17 7 fill;
-			/*background-color: c9cda7;*/
-			
-			padding: 2px;
-			padding-right:0px;
+
+			padding: 1px;
+		}
+
+		.cellcontainer {
+			position: relative;
+			top: 0px;
+			left: 0px;
+			margin-top: -5px;
+			/*border: 2px solid white;*/
+		}
+
+		.treeVertical {
+			position: absolute;
+			background-color: red;
+			width: 4px;
+		}
+
+		.treeHorizontal {
+			position: absolute;
+			background-color: red;
+			height: 4px;
 		}
 		
 		.hypothesis {
@@ -30,24 +53,24 @@ body {
 		}
 
 		.hypothesis-title-word {
-			font: 28pt 'Open Sans';
+			font: 20pt 'Open Sans';
 			color: black;
 		}
 		
 		.hypothesis-title {
-			font: bold 28pt helvetica;
+			font: 800 22pt 'Open Sans';
 			color: #000000;
 		}
 		
 		#title-section {
 			position: relative;
 		}
-		
+
 		#author-text {
 			position: relative;
-			bottom: 0px;
-			right: 0px;
-			font: italic 18pt helvetica;
+			text-align: right;
+			margin-right: auto;
+			font: italic 400 18pt 'Open Sans';
 		}
 		
 		.sep1 {
@@ -55,6 +78,7 @@ body {
 			width: 100%;
 			height: 8px;
 			background-color: #000000;
+			margin-bottom: -10px;
 		}
 		
 		.sep2 {
