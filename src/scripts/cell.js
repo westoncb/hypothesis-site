@@ -44,11 +44,11 @@ $(document).ready(function() {
 		this.cellShell.css('margin-top', Cell.shellMarginTop);
 		this.cellTop.css('height', Cell.topHeight);
 		this.cell.css('padding-top', Cell.topHeight);
-		this.cellTop.append('testasdfadsf');
+		this.cellTop.append('This is the cell top!');
 
 		this.cellBottom.css('height', Cell.bottomHeight);
 		this.cell.css('padding-bottom', Cell.bottomHeight);
-		this.cellBottom.append('testsf');
+		this.cellBottom.append('But this... --this is the cell bottom!');
 
 		this.cellBody.css('height', 100);
 
@@ -85,7 +85,6 @@ $(document).ready(function() {
 	var aTableOrSomething = $("<div style='background-color: white; width: 60%; height: 500px;'></div>");
 	aTableOrSomething.append(cell.getDOMNode());
 	getRootElement().append(aTableOrSomething);
-	cell.setLeftMarginWidth(10);
 	
 	function createElementPattern(className, display, id) {
 		var idPart = id ? ('id="' + id + '" ') : '';

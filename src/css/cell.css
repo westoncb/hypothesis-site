@@ -1,6 +1,6 @@
 .cell {
 	position: relative;
-	font: 14px "Open Sans";
+	font: 14px "Gentium Book Basic";
 	word-wrap: break-word;
 
 	border-style: solid;
@@ -40,14 +40,16 @@
 	position: absolute;
 	top: 0px;
 	width: 100%;
-	color: white;
+	color: black;
+	font: 14px "Gentium Book Basic";
 }
 
 .cellBottom {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
-	color: white;
+	color: black;
+	font: 14px "Gentium Book Basic";
 }
 
 .cellBody {
