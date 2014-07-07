@@ -39,10 +39,10 @@ body {
 
 			border-style: solid;
 			border-width: 4px 17px 17px 7px;
-			-moz-border-image: url('../images/table2.png') 4 17 17 7 fill;
-			-webkit-border-image: url('../images/table2.png') 4 17 17 7 fill;
-			-o-border-image: url('../images/table2.png') 4 17 17 7 fill;
-			border-image: url('../images/table2.png') 4 17 17 7 fill;
+			-moz-border-image: url('../images/tabledark.png') 4 17 17 7 fill;
+			-webkit-border-image: url('../images/tabledark.png') 4 17 17 7 fill;
+			-o-border-image: url('../images/tabledark.png') 4 17 17 7 fill;
+			border-image: url('../images/tabledark.png') 4 17 17 7 fill;
 
 			padding: 1px;
 		}

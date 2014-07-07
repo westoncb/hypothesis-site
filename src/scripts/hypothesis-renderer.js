@@ -83,7 +83,7 @@ $(document).ready(function(){
 			}
 		} else {
 			var thisCell = $(cellString);
-			var thisContainer = $(cellContainerString); 
+			var thisContainer = $(cellContainerString);
 			var thisCellLeftMargin = $(cellLeftMarginString);
 			var atTheRoot = (root === parent);
 
@@ -122,8 +122,8 @@ $(document).ready(function(){
 				showChildren: function(func) {
 					for (var i = 0; i < this.childSet.length; i++) {
 						var child = this.childSet[i];
-						// child.container.slideDown({progress: func,
-						// 						 duration: 300});
+							// child.container.slideDown({progress: func,
+							// 						 duration: 300});
 						child.container.show();
 					};	
 				},
@@ -167,21 +167,6 @@ $(document).ready(function(){
 				<div id="author-text">by ' + author + '</div> \
 			</div><div class="sep1"></div><br>';
 	}
-
-	// function setYPositions(y, index, cells) {
-	// 	for (var i = 0; i < cells.length; i++) {
-	// 		var cell = cells[i];
-	// 		if (cell instanceof Array) {
-	// 			y = setYPositions(y, index, cell);
-	// 		} else {
-	// 			index[0] += 1;
-	// 			cell.css('top', y - (index[0] * 5));
-	// 			y += cell.outerHeight();
-	// 		}
-	// 	};
-
-	// 	return y;
-	// }
 
 	//func takes (node, depth)
 	function walkCellsBreadthFirst(cells, depth, func) {
@@ -229,47 +214,6 @@ $(document).ready(function(){
 			treeHorizontal.css('right', 0);
 		}
 	}
-
-	// function setXPositions(x, depth, cells) {
-	// 	var childrenStack = [];
-	// 	for (var i = 0; i < cells.length; i++) {
-	// 		if (cells[i] instanceof Array) {
-	// 			childrenStack.push(cells[i]);
-	// 		} else {
-	// 			if (depth > 0) {
-	// 				var cellContainer = cells[i].container;
-	// 				var parentWidth = cellContainer.width();
-	// 				var cellContainerMarginTop = numberOnly(cellContainer.css('margin-top'));
-	// 				var cell = cells[i].cell;
-	// 				var cellHeight = cell.outerHeight() + cellContainerMarginTop;
-	// 				var cellLeftMargin = cells[i].leftMargin;
-
-	// 				cellLeftMargin.css('width', x);
-	// 				cell.css('width', parentWidth - x);
-	// 				cell.css('margin-left', x);
-	// 				cellLeftMargin.css('height', cellHeight);
-
-	// 				var parent = cells[i].parent.cell;
-	// 				var treeVertical = cellLeftMargin.find('.treeVertical');
-	// 				var treeHorizontal = cellLeftMargin.find('.treeHorizontal');
-	// 				var distanceFromParent = cell.offset().top - (parent.offset().top + parent.outerHeight());
-
-	// 				treeVertical.css('right', subCellShiftWidth/2);
-	// 				treeVertical.css('bottom', cellHeight/2);
-	// 				treeVertical.css('height', distanceFromParent + cellHeight/2 - cellContainerMarginTop);
-
-	// 				treeHorizontal.css('width', subCellShiftWidth/2 + treeVertical.width());
-	// 				treeHorizontal.css('top', cellHeight/2);
-	// 				treeHorizontal.css('right', 0);
-	// 			}
-	// 		}
-	// 	};
-
-	// 	for (var i = 0; i < childrenStack.length; i++) {
-	// 		var xOffset = (depth+1)*subCellShiftWidth;
-	// 		setXPositions(xOffset, depth+1, childrenStack.pop());
-	// 	}
-	// }
 
 	var hypothesisNode = $('<div class="cellborderroot" id="hyproot" style="position: relative; width: 80%; margin-left: auto; margin-right: auto;"></div>');
 	$('body').append(hypothesisNode);
