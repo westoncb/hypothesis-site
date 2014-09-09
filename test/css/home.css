@@ -1,0 +1,96 @@
+body {
+	background-color: white;
+		color: black;
+		font: 44pt 'Open Sans';
+	}
+
+	#banner {
+		position: relative;
+		border-style: solid;
+		border-color: E0E0E0;
+		background-color: c9cda7;
+		width: 100%;
+		padding: 2px;
+		padding-right:0px;
+		margin-right: auto;
+		margin-left: auto;
+		}
+
+	#menu {
+		border-color: white;
+		border-style: solid;
+		color: black;
+		font: 14pt 'Open Sans';
+	}	
+
+	.menuitem {
+		font: 14pt 'Open Sans';
+		position: relative;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-right: solid E0E0E0 3px;
+	}
+
+	#notificationbox {
+		font: 10pt 'Open Sans';
+		width: 200px;
+		height: 100%;
+		margin-left: 0;
+		position: absolute;
+		border-style: solid;
+		border-color: E0E0E0;
+	}
+
+	#userinfo {
+		font: 10pt 'Open Sans';
+		border-bottom: solid 2px black;
+		position: absolute;
+	}
+
+	.notification {
+		font: 10pt 'Open Sans';
+		border-bottom: solid 2px E0E0E0;
+		position: relative;
+		
+	}
+
+	#featuredhypothesis {
+		border: solid 1px black;
+		position: relative;
+		margin-left: 205px;
+		background-color: E0E0E0;
+	}
+
+	#feed {
+		border-color: black;
+		border-style: solid;
+		height: 500px;
+		position: relative;
+		margin-left: 205px;
+	}
+
+	#feednav {
+		position: relative;
+	}
+
+	.feednavitem {
+		font: 14pt 'Open Sans';
+		position: relative;
+		padding-right: 10px;
+		padding-left: 10px;
+		border-right: solid E0E0E0 3px;
+		border-bottom: solid 1px black;
+	}
+
+	.feeditem {
+		border-right: solid 1px white;
+		border-top: 1px white;
+		border-left: 1px white;
+		border-bottom: solid 1px black;
+		position: relative;
+	}
+
+	.username {
+		color: blue;
+		position: relative;
+	}

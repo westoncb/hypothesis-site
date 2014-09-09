@@ -1,0 +1,65 @@
+.cell {
+	position: relative;
+	font: 14px "Gentium Book Basic";
+	word-wrap: break-word;
+
+	border-style: solid;
+	-moz-border-image: url('../images/table2.png');
+	-webkit-border-image: url('../images/table2.png');
+	-o-border-image: url('../images/table2.png');
+	border-image: url('../images/table2.png');
+}
+
+.cellShell {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin-top: -5px;
+	/*border: 2px solid white;*/
+}
+
+.branchVertical {
+	position: absolute;
+	background-color: 10bce7;
+	width: 8px;
+}
+
+.branchHorizontal {
+	position: absolute;
+	background-color: 10bce7;
+	height: 8px;
+}
+
+.cellLeftMargin {
+	position: absolute;
+	margin-top: 5px;
+	background-color: #303030;
+}
+
+.cellTop {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	color: black;
+	font: 14px "Gentium Book Basic";
+}
+
+.cellBottom {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: black;
+	font: 14px "Gentium Book Basic";
+}
+
+.cellBody {
+
+}
+
+.cellSkin {
+
+}
+
+.cellUnderbelly {
+
+}
