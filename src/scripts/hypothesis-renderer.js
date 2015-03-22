@@ -17,55 +17,55 @@ $(document).ready(function(){
 	}
 
 	var hypothesisModelString = '{"id": "0-0", \
-					  "name": "The moon is made of cheese. Here\'s some CHEESE for ya bra!", \
+					  "name": "The moon is made of cheese.", \
 					  "author": "Sofia Chandler-Freed", \
 					  "amplifiers": [ \
 					  				{ \
-					  				"id": "1-0", \
-					  				"type": "justification", \
-					  				"contents": "Here is some more text. And it\'s not just any text, but THE very best text possible--especially since it\'s about how the moon\'s made out of some kinda weird ass soy-based Wallace and Grommit cheese.catscatscatscatscats catscatscatscatscats catscatscatscatscat scatscatscatscatscatscats catscatscatscatscatscatscatscatsca tscatscatscatscat scatscatscatscatscatscatscatscatscatscats catscatscatscatscatsc atscatscatscatscat scatscatscatscatscat scatscatscatscatsca tscatscatscatscatsc atscats", \
-					  				"amplifiers": "" \
+					  				"<b>ID</b>": "1-0", \
+					  				"<b>Type</b>": "justification", \
+					  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+					  				"<b>Amplifiers</b>": "" \
 					  			  }, \
 					  			  { \
-					  				"id": "1-1", \
-					  				"type": "justification", \
-					  				"contents": "catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscats", \
-					  				"amplifiers": [ \
+					  				"<b>ID</b>": "1-1", \
+					  				"<b>Type</b>": "justification", \
+					  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+					  				"<b>Amplifiers</b>": [ \
 						  				{ \
-						  				"id": "2-0", \
-						  				"type": "justification", \
-						  				"contents": "Here is some more text. And it\'s not just any text, but THE very best text possible--especially since it\'s about how the moon\'s made out of some kinda weird ass soy-based Wallace and Grommit cheese.", \
-						  				"amplifiers": [ \
+						  				"<b>ID</b>": "2-0", \
+						  				"<b>Type</b>": "justification", \
+						  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+						  				"<b>Amplifiers</b>": [ \
 							  				{ \
-							  				"id": "3-0", \
-							  				"type": "justification", \
-							  				"contents": "Here is some more text. And it\'s not just any text, but THE very best text possible--especially since it\'s about how the moon\'s made out of some kinda weird ass soy-based Wallace and Grommit cheese.", \
-							  				"amplifiers": "" \
+							  				"<b>ID</b>": "3-0", \
+							  				"<b>Type</b>": "justification", \
+							  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+							  				"<b>Amplifiers</b>": "" \
 							  			  }, \
 							  			  { \
-							  				"id": "3-1", \
-							  				"type": "justification", \
-							  				"contents": "catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscats", \
-							  				"amplifiers": [ \
+							  				"<b>ID</b>": "3-1", \
+							  				"<b>Type</b>": "justification", \
+							  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+							  				"<b>Amplifiers</b>": [ \
 								  				{ \
-								  				"id": "4-0", \
-								  				"type": "justification", \
-								  				"contents": "Here is some more text. And it\'s not just any text, but THE very best text possible--especially since it\'s about how the moon\'s made out of some kinda weird ass soy-based Wallace and Grommit cheese.", \
-								  				"amplifiers": "" \
+								  				"<b>ID</b>": "4-0", \
+								  				"<b>Type</b>": "justification", \
+								  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+								  				"<b>Amplifiers</b>": "" \
 								  			  }, \
 								  			  { \
-								  				"id": "4-1", \
-								  				"type": "justification", \
-								  				"contents": "catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscats", \
-								  				"amplifiers": "" \
+								  				"<b>ID</b>": "4-1", \
+								  				"<b>Type</b>": "justification", \
+								  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+								  				"<b>Amplifiers</b>": "" \
 								  			  }] \
 							  			  }] \
 						  			  }, \
 						  			  { \
-						  				"id": "2-1", \
-						  				"type": "justification", \
-						  				"contents": "catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscatscats catscatscatscatscatscatscatscatscatscatscatscatscatscats", \
-						  				"amplifiers": "" \
+						  				"<b>ID</b>": "2-1", \
+						  				"<b>Type</b>": "justification", \
+						  				"<b>Contents</b>": "If one looks to the moon, one will undeniably discover a range of hues therein; and, my reader will grant me, that upon observing these definite hues, if one ponders thusly, \'to what other material object could these hues correspond?\'&mdash;one will have no alternative but respond, \'to cheese these hues are related.\'", \
+						  				"<b>Amplifiers</b>": "" \
 						  			  }] \
 					  			  }] \
 					 }';
